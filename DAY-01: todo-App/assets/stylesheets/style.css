@@ -62,7 +62,9 @@ table {
 body {
 	font-family: var(--font);
 	line-height: 1.5;
-	color: var(--text-color);
+	color: #ffffff;
+	font-size: 28px;
+	text-transform: capitalize;
 	background: linear-gradient(to right, #232526,#414346);
 }
 
@@ -239,4 +241,15 @@ input {
 	padding: 10px 20px;
 	font-size: 16px;
 	border-radius: 10px;
+}
+ul ,li{
+	list-style-type: none;
+}
+.list{
+width: 400px;
+margin: 0 auto;
+
+}
+ul li:nth-child(odd) {
+  background: gray;
 }
