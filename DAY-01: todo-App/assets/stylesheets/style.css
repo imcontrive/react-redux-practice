@@ -63,6 +63,7 @@ body {
 	font-family: var(--font);
 	line-height: 1.5;
 	color: var(--text-color);
+	background: linear-gradient(to right, #232526,#414346);
 }
 
 /******* Base CSS *******/
@@ -89,8 +90,11 @@ input:focus {
 }
 /***** Heading Elements ******/
 h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 700;
+	color: whitesmoke;
+	letter-spacing: 1.5px;
+	font-family: monospace;
 }
 h2 {
 	font-size: 2.5rem;
@@ -218,198 +222,21 @@ h6 {
 	*zoom: 1;
 }
 
-/********Header Styles******/
-.banner {
-	background: url("./../media/banner.jpg") center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	color: white;
-}
-.header {
-	max-width: 1300px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 2rem;
-}
-.nav-head {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	/* padding: 10px 0px; */
-	/* font-size: inherit; */
-	/* text-rendering: auto; */
-}
-.nav-head a {
-	color: white;
-}
-.nav-head h1 {
-	font-family: 'Source Sans Pro', sans-serif;
-}
-.nav-head li {
-  display: inline-block;
-	margin: 0px 20px;
-}
-.nav-head .active {
-	color: #ff4c4c;
-}
-.nav-head a:hover {
-	color: #FF4C4C;
-  border-radius: 5px;
-	cursor: pointer;
-	transition-property: color;
-	transition-duration: 1s;
-	/* transition-delay: 1.5s; */
-  transition-timing-function: linear, ease-in;	
-}
-.h1-logo {
-	font-size: 2.0rem;
-}
-.nav__menu {
-	@extend .nav;
-}
-.nav__link {
-	font-size: 0.9rem;
-	font-weight: bold;
-	/* font-style: bold; */
-	/* margin-left: 2rem; */
-	transition: all 200ms ease-in-out;
-}
-#toggle, .label {
-	display: none;
-}
-/*Dropdown*/
-.drop-link {
-	position: relative;
-}
-.drop-box {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
-	/* padding-top: 20px; */
-}
-.drop-menu {
-	background:#ffffff;
-	border-radius: 6px;
-	padding: 20px 20px;
-	text-align: left;
-	width: 180px;
-	display: none;
-}
-.drop-menu li {
-	display: block;
-	/* padding-left: 1rem; */
-	margin: 0;
-}
-.drop-menu li a {
-	display: block;
-	background: none;
-	padding: 0.5rem 1rem;
-	margin: 10px 0px;
-	color: black;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-.drop-link:hover .drop-menu {
-	display: block;
-}
-.drop-menu li a:hover {
-	background: none;
-	color: #FF4C4C;
-	background: #F8F9FA;
-}
-/* Banner-info */
-.banner-info {
-	padding: 4em 0 0em 3em;
-	width: 38%;
-}
-.banner-buttons {
-	padding-bottom: 12rem;
-}
-
-.banner-info p {
-	color: #fff;
-	font-size: 0.8em;
-	letter-spacing: 1.0;
-	font-weight: 400;
-	margin: 0;
-	text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
-}
-.banner-info h3 {
-	font-size: 3.5em;
-	letter-spacing: 1.0;
-	text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
-	margin-bottom:  1.5rem;
-}
-.banner-info .btn {
+#addBtn {
 	padding: 11px 31px;
 	border-radius: 0px;
 	font-weight: 600;
 	box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.5);
 	color:#ff4c4c;
 	background: #ffffff;
+	border-radius: 10px;
 }
-.banner-info .read-btn {
-	background: #10A6FB;
-	color: #f7f7f7;
+.btn:hover {
+	background: #ff4c4c;
+	color: blue;
 }
-.secondry-heading {
-	background: rgb(230, 227, 227);
-}
-
-/********RESPONSIVE*****/
-/* STYLE FOR HAMBURGER */
-	
-@media screen and (max-width: 992px) {
-	
-}
-
-@media screen and (max-width: 768px) {
-	.label {
-		display: block;
-	}
-	#toggle:checked ~ .nav__menu {
-		display: block;
-	}
-	.nav__menu {
-		display: flex;
-		/* flex-direction: column; */
-		position: absolute;
-		right: 1.0rem;
-		margin-left: 1rem;
-		/* left: auto; */
-		top: 3.5rem;
-		display: none;
-		background: rgba(16, 16, 16, 0.85);
-		padding: 20px;
-	}
-	.nav__link {
-		margin-left: 0;
-		margin-bottom: 3rem;
-		display: block;
-	}
-	
-	footer {
-		height: 100%;
-		margin: 0.625rem 0;
-		padding: 0;
-	}
-	iframe {
-		width: auto;
-	}
-}
-
-@media all and (max-width: 630px) {
-	.banner-buttons {
-		padding-top: 1rem;
-		padding-bottom: 3rem;
-		margin-top: 20px;
-	}
-	 .banner-info h3 {
-		font-size: 3.0rem;
-	}
-	.banner-info .read-btn {
-		background: #10A6FB;
-		color: #f7f7f7;
-	} 
-	
+input {
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 10px;
 }
