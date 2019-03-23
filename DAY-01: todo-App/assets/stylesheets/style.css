@@ -250,6 +250,14 @@ width: 400px;
 margin: 0 auto;
 
 }
-ul li:nth-child(odd) {
+/* ul li:nth-child(odd) {
   background: gray;
+} */
+p {
+	display: inline-block;
+	padding: 20px;
+	text-align: center;
+}
+.delete {
+	margin-left: 20px;
 }
